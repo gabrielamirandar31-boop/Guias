@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Multiplaza San Salvador | El Centro Comercial Más Exclusivo</title>
+  <meta name="description" content="Descubre Multiplaza San Salvador: más de 220 tiendas de moda internacional, el exclusivo distrito gastronómico Las Terrazas, Cinépolis VIP y eventos.">
+  <meta name="keywords" content="Multiplaza, San Salvador, Centro Comercial, Las Terrazas, Tiendas, Restaurantes, Cinépolis, El Salvador">
+
+  <!-- Metadatos Open Graph / Redes Sociales -->
+  <meta property="og:title" content="Multiplaza San Salvador | Centro Comercial">
+  <meta property="og:description" content="Todo lo que buscas en un solo lugar. Más de 220 tiendas de prestigio, gastronomía de autor y entretenimiento.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styleM.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       BARRA SUPERIOR (TOPBAR)
+       ========================================== -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <span class="status-pill">
+          <span class="pulse-dot"></span> Abierto Ahora • Cierra a las 8:00 PM
+        </span>
+        <span class="topbar-location">📍 Antiguo Cuscatlán, San Salvador</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+50325079800" class="topbar-link">📞 +503 2507-9800</a>
+        <a href="#horarios" class="topbar-link">Horarios</a>
+        <div class="mall-selector">
+          <span>🇸🇻 Multiplaza San Salvador ▾</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVEGACIÓN
+       ========================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Multiplaza San Salvador">
+        <div class="brand-symbol">M</div>
+        <div class="brand-text">
+          <span class="brand-name">MULTIPLAZA</span>
+          <span class="brand-tagline">San Salvador</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#tiendas" class="nav-link">Tiendas</a>
+        <a href="#restaurantes" class="nav-link">Gastronomía <span class="nav-badge">Terrazas</span></a>
+        <a href="#promociones" class="nav-link">Promociones</a>
+        <a href="#eventos" class="nav-link">Eventos</a>
+        <a href="#mapa" class="nav-link">Mapa</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-search-btn" onclick="document.getElementById('mainOmniboxInput').focus(); document.getElementById('buscador').scrollIntoView({behavior:'smooth'});" aria-label="Abrir buscador">
+          <span>🔍</span>
+          <span class="search-text">Buscar tiendas...</span>
+          <kbd class="search-shortcut">Ctrl K</kbd>
+        </button>
+
+        <a href="#mapa" class="btn btn-sm btn-primary">📍 Cómo llegar</a>
+
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DRAWER NAVEGACIÓN MÓVIL -->
+  <div id="mobileNavDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-symbol" style="width:36px; height:36px; font-size:1.1rem;">M</div>
+        <span class="brand-name" style="font-size:1.1rem;">MULTIPLAZA</span>
+      </div>
+      <button id="closeMobileDrawer" class="drawer-close-btn">✕</button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="#inicio" class="mobile-nav-link">Inicio</a>
+      <a href="#tiendas" class="mobile-nav-link">🛍️ Directorio de Tiendas</a>
+      <a href="#restaurantes" class="mobile-nav-link">🍽️ Las Terrazas & Dining</a>
+      <a href="#promociones" class="mobile-nav-link">🎁 Promociones & Ofertas</a>
+      <a href="#eventos" class="mobile-nav-link">📅 Eventos & Calendario</a>
+      <a href="#mapa" class="mobile-nav-link">🗺️ Mapa del Centro Comercial</a>
+      <a href="#servicios" class="mobile-nav-link">💎 Servicios Disponibles</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="#mapa" class="btn btn-primary" style="width:100%; text-align:center;">Cómo Llegar (Waze / Maps)</a>
+      <p style="font-size:0.75rem; color:var(--text-muted); text-align:center; margin-top:10px;">Multiplaza San Salvador • Grupo Roble</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         1. HERO PRINCIPAL
+         ========================================== -->
+    <section id="inicio" class="hero">
+      <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1920&q=85" alt="Experiencia Multiplaza San Salvador">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-star">★</span> El Mall Más Exclusivo de El Salvador
+          </div>
+          <h1 class="hero-title">
+            Todo lo que buscas, <span class="highlight">en un solo lugar</span>
+          </h1>
+          <p class="hero-subtitle">
+            Descubre más de 220 tiendas de moda internacional, gastronomía de autor en Las Terrazas, Cinépolis VIP y experiencias memorables para ti y tu familia.
+          </p>
+          <div class="hero-ctas">
+            <a href="#tiendas" class="btn btn-primary">🛍️ Explorar Tiendas</a>
+            <a href="#promociones" class="btn btn-secondary">🎁 Ver Promociones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS RÁPIDAS -->
+    <div class="hero-stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">🛍️</div>
+            <div>
+              <div class="stat-num">220+</div>
+              <div class="stat-label">Tiendas & Marcas Globales</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">🍷</div>
+            <div>
+              <div class="stat-num">45+</div>
+              <div class="stat-label">Restaurantes en Las Terrazas</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">🎬</div>
+            <div>
+              <div class="stat-num">VIP & IMAX</div>
+              <div class="stat-label">Salas Cinépolis Exclusivas</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">🚗</div>
+            <div>
+              <div class="stat-num">2,500+</div>
+              <div class="stat-label">Parqueos Inteligentes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         2. BUSCADOR BUSCADOR / OMNIBOX
+         ========================================== -->
+    <section id="buscador" class="search-section">
+      <div class="container">
+        <div class="search-card-wrapper">
+          <div class="search-input-group">
+            <span class="search-icon">🔍</span>
+            <input 
+              type="text" 
+              id="mainOmniboxInput" 
+              class="main-search-input" 
+              placeholder="Busca tiendas (Zara, Apple), restaurantes, servicios o promociones..."
+            >
+            <button class="btn btn-primary">Buscar</button>
+          </div>
+
+          <div class="search-quick-tags">
+            <span class="quick-tags-label">Frecuentes:</span>
+            <button class="tag-pill active">Todos</button>
+            <button class="tag-pill">MANGO</button>
+            <button class="tag-pill">Vélez</button>
+            <button class="tag-pill">Decathlon</button>
+            <button class="tag-pill">Apple iStore</button>
+            <button class="tag-pill">Starbucks</button>
+            <button class="tag-pill">Las Terrazas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. CATEGORÍAS
+         ========================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Explora Multiplaza</span>
+          <h2 class="section-title">¿Qué deseas vivir hoy?</h2>
+          <p class="section-subtitle">Navega a través de nuestros principales pilares comerciales y experiencias.</p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="#tiendas" class="category-card">
+            <div class="category-icon-box">🛍️</div>
+            <h3 class="category-name">Tiendas</h3>
+            <span class="category-count">220+ Locales</span>
+          </a>
+          <a href="#restaurantes" class="category-card">
+            <div class="category-icon-box">🍽️</div>
+            <h3 class="category-name">Gastronomía</h3>
+            <span class="category-count">Las Terrazas & Dining</span>
+          </a>
+          <a href="#eventos" class="category-card">
+            <div class="category-icon-box">🎬</div>
+            <h3 class="category-name">Entretenimiento</h3>
+            <span class="category-count">Cine VIP & Juegos</span>
+          </a>
+          <a href="#promociones" class="category-card">
+            <div class="category-icon-box">🎁</div>
+            <h3 class="category-name">Promociones</h3>
+            <span class="category-count">Ofertas Especiales</span>
+          </a>
+          <a href="#eventos" class="category-card">
+            <div class="category-icon-box">📅</div>
+            <h3 class="category-name">Eventos</h3>
+            <span class="category-count">Agenda Semanal</span>
+          </a>
+          <a href="#servicios" class="category-card">
+            <div class="category-icon-box">💎</div>
+            <h3 class="category-name">Servicios</h3>
+            <span class="category-count">Confort & Atención</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. PROMOCIONES DESTACADAS
+         ========================================== -->
+    <section id="promociones" class="section-padding bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Beneficios Exclusivos</span>
+          <h2 class="section-title">Promociones que no te puedes perder</h2>
+          <p class="section-subtitle">Aprovecha descuentos de temporada y alianzas especiales.</p>
+        </div>
+
+        <div class="promos-grid">
+          <div class="promo-card">
+            <div class="promo-banner-wrap">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Zara Promo">
+              <span class="promo-discount-badge">-40%</span>
+            </div>
+            <div class="promo-card-body">
+              <span class="promo-brand-tag">Zara & Inditex</span>
+              <h3 class="promo-title">Mid-Season Luxury Sale</h3>
+              <p class="promo-desc">Descuentos exclusivos de hasta un 40% en prendas seleccionadas de la colección.</p>
+              <div class="promo-footer">
+                <span class="promo-expiry">⏳ Válido hasta el 30 de Oct.</span>
+                <button class="btn btn-sm btn-outline">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <div class="promo-banner-wrap">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Terrazas Promo">
+              <span class="promo-discount-badge">2x1</span>
+            </div>
+            <div class="promo-card-body">
+              <span class="promo-brand-tag">Las Terrazas</span>
+              <h3 class="promo-title">Noches de Cócteles & Tapas</h3>
+              <p class="promo-desc">Disfruta 2x1 en cócteles de autor de martes a jueves a partir de las 5:00 PM.</p>
+              <div class="promo-footer">
+                <span class="promo-expiry">⏳ Martes a Jueves</span>
+                <button class="btn btn-sm btn-outline">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card">
+            <div class="promo-banner-wrap">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Apple Promo">
+              <span class="promo-discount-badge">0% Tasa</span>
+            </div>
+            <div class="promo-card-body">
+              <span class="promo-brand-tag">iStore El Salvador</span>
+              <h3 class="promo-title">Hasta 24 Cuotas Sin Intereses</h3>
+              <p class="promo-desc">Financia tu nueva MacBook o iPhone 15 Pro con bancos participantes.</p>
+              <div class="promo-footer">
+                <span class="promo-expiry">⏳ Por tiempo limitado</span>
+                <button class="btn btn-sm btn-outline">Ver detalle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. MAPA INTERACTIVO
+         ========================================== -->
+    <!-- ==========================================
+         5. MAPA INTERACTIVO Y ACCESOS
+         ========================================== -->
+    <section id="mapa" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ubicación y Accesibilidad</span>
+          <h2 class="section-title">Mapa de Accesos y Niveles</h2>
+          <p class="section-subtitle">Consulta nuestros puntos de entrada habilitados, vías de circulación y la distribución de locales por nivel.</p>
+        </div>
+
+        <div class="interactive-map-card">
+          <div class="map-toolbar">
+            <div class="map-level-pills">
+              <button class="map-level-btn active" onclick="switchMapTab('accesos', this)">🚗 Puntos de Acceso Viales</button>
+              <button class="map-level-btn" onclick="switchMapTab('nivel1', this)">🏢 Nivel 1 (Moda & Lujo)</button>
+              <button class="map-level-btn" onclick="switchMapTab('nivel2', this)">💻 Nivel 2 (Tech & Lifestyle)</button>
+              <button class="map-level-btn" onclick="switchMapTab('terrazas', this)">🍽️ Las Terrazas</button>
+            </div>
+          </div>
+
+          <!-- CONTENIDO: VISTA DE MAPA DE ACCESOS (IMAGEN) -->
+          <div id="mapViewAccesos" class="map-view-content active">
+            <div class="map-image-wrapper">
+              <img src="image_e407e6.jpg" alt="Puntos de Acceso Habilitados Multiplaza San Salvador" class="map-access-img">
+            </div>
+            <div class="map-access-legend">
+              <div class="legend-item">
+                <span class="legend-color legend-purple"></span>
+                <span class="legend-text"><strong>Accesos Habilitados:</strong> Calle El Pedregal, Redondel D'Aubuisson y Av. Jerusalén.</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color legend-yellow"></span>
+                <span class="legend-text"><strong>Cerrado Temporalmente:</strong> Tramo Carretera Panamericana.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENIDO: VISTA INTERNA SVG (NIVELES) -->
+          <div id="mapViewInterno" class="map-view-content" style="display: none;">
+            <div class="map-canvas-container">
+              <svg class="mall-svg-plan" viewBox="0 0 960 460" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="920" height="420" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+                <path d="M 60 230 L 900 230" stroke="#EDF2F7" stroke-width="50" stroke-linecap="round"/>
+                <circle cx="480" cy="230" r="85" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                <text x="480" y="235" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="13" fill="#64748B">GRAN PLAZA CENTRAL</text>
+
+                <!-- Tienda ZARA -->
+                <g class="map-store-zone">
+                  <rect x="70" y="60" width="180" height="120" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                  <text x="160" y="115" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#0F172A">ZARA</text>
+                  <text x="160" y="135" text-anchor="middle" font-size="11" fill="#64748B">Local L-102</text>
+                </g>
+
+                <!-- Tienda PULL&BEAR -->
+                <g class="map-store-zone">
+                  <rect x="70" y="280" width="180" height="120" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                  <text x="160" y="335" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="15" fill="#0F172A">PULL&BEAR</text>
+                  <text x="160" y="355" text-anchor="middle" font-size="11" fill="#64748B">Local L-118</text>
+                </g>
+
+                <!-- Tienda APPLE -->
+                <g class="map-store-zone">
+                  <rect x="530" y="60" width="160" height="100" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                  <text x="610" y="110" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#0F172A">iStore Apple</text>
+                  <text x="610" y="130" text-anchor="middle" font-size="10" fill="#64748B">Local L-240</text>
+                </g>
+
+                <!-- Tienda NIKE -->
+                <g class="map-store-zone">
+                  <rect x="530" y="300" width="160" height="100" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                  <text x="610" y="350" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#0F172A">NIKE STORE</text>
+                  <text x="610" y="370" text-anchor="middle" font-size="10" fill="#64748B">Local L-222</text>
+                </g>
+
+                <!-- Zona Terrazas Starbucks -->
+                <g class="map-store-zone">
+                  <rect x="720" y="60" width="170" height="150" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+                  <text x="805" y="130" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#92400E">STARBUCKS</text>
+                  <text x="805" y="150" text-anchor="middle" font-size="11" fill="#B45309">Acceso Terrazas</text>
+                </g>
+
+                <!-- Restaurante Il Pomodoro -->
+                <g class="map-store-zone">
+                  <rect x="720" y="250" width="170" height="150" rx="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+                  <text x="805" y="320" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#991B1B">IL POMODORO</text>
+                  <text x="805" y="340" text-anchor="middle" font-size="11" fill="#B91C1C">Las Terrazas</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  <!-- ==========================================
+       FOOTER / PIE DE PÁGINA
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo" style="margin-bottom: 12px;">
+          <div class="brand-symbol">M</div>
+          <div class="brand-text">
+            <span class="brand-name" style="color: #fff;">MULTIPLAZA</span>
+            <span class="brand-tagline">San Salvador</span>
+          </div>
+        </div>
+        <p style="color: #94A3B8; font-size: 0.9rem; max-width: 300px;">
+          El destino comercial y de entretenimiento más vanguardista de El Salvador.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#tiendas">Tiendas</a>
+        <a href="#restaurantes">Restaurantes</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#eventos">Eventos</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <p style="color: #94A3B8; font-size: 0.875rem;">Carretera a Panamericana, Antiguo Cuscatlán</p>
+        <p style="color: #94A3B8; font-size: 0.875rem;">Tel: +503 2507-9800</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <p>&copy; 2026 Multiplaza San Salvador — Grupo Roble. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script básico interactivo -->
+  <script>
+    const drawer = document.getElementById('mobileNavDrawer');
+    const toggleBtn = document.getElementById('mobileMenuToggle');
+    const closeBtn = document.getElementById('closeMobileDrawer');
+
+    toggleBtn.addEventListener('click', () => drawer.classList.add('open'));
+    closeBtn.addEventListener('click', () => drawer.classList.remove('open'));
+  </script>
+</body>
+</html>
