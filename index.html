@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acceso a las guías y proyectos del sitio.">
+    <title>Mis guías</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #f3f6fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 320px;
+            margin: 0;
+        }
+
+        header {
+            padding: 64px 24px 48px;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(135deg, #123b68, #176b87);
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+        }
+
+        header p {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #e0edf5;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        main {
+            width: min(100% - 40px, 1000px);
+            margin: 40px auto 64px;
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            font-size: 1.5rem;
+        }
+
+        .guias {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+
+        .guia {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 190px;
+            padding: 24px;
+            background: #fff;
+            border: 1px solid #e1e8f0;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgb(23 32 51 / 6%);
+        }
+
+        .guia h3 {
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+        }
+
+        .guia p {
+            flex: 1;
+            margin: 0 0 20px;
+            color: #5d6879;
+            line-height: 1.5;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 11px 16px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            background: #176b87;
+            border-radius: 8px;
+            transition: background-color 160ms ease, transform 160ms ease;
+        }
+
+        .boton:hover {
+            background: #104e65;
+            transform: translateY(-2px);
+        }
+
+        .boton:focus-visible {
+            outline: 3px solid #e2a53b;
+            outline-offset: 3px;
+        }
+
+        .proximamente {
+            margin-top: 30px;
+            padding: 20px 24px;
+            color: #536174;
+            background: #e8eef5;
+            border-radius: 12px;
+        }
+
+        .proximamente p {
+            margin: 6px 0 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            padding: 20px;
+            color: #64748b;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis guías</h1>
+        <p>Un espacio para reunir mis trabajos y ejercicios. Elegí una opción para comenzar.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="guias-titulo">
+            <h2 id="guias-titulo">Guía 1</h2>
+            <div class="guias">
+                <article class="guia">
+                    <h3>Países de Centroamérica</h3>
+                    <p>Conocé algunos países, sus lugares y características.</p>
+                    <a class="boton" href="Guia1/Paises.html">Abrir guía</a>
+                </article>
+                <article class="guia">
+                    <h3>Multiplaza</h3>
+                    <p>Explorá la página dedicada al centro comercial.</p>
+                    <a class="boton" href="Guia1/Multiplaza.html">Abrir página</a>
+                </article>
+                <article class="guia">
+                    <h3>Como agua para chocolate</h3>
+                    <p>Resumen y datos de la novela de Laura Esquivel.</p>
+                    <a class="boton" href="Guia1/Chocolate.html">Abrir página</a>
+                </article>
+                <article class="guia">
+                    <h3>Instrucciones para llorar</h3>
+                    <p>Ejercicio de lectura y presentación de texto.</p>
+                    <a class="boton" href="Guia1/ejemplo2.html">Abrir ejercicio</a>
+                </article>
+                <article class="guia">
+                    <h3>Estilos embebidos</h3>
+                    <p>Ejercicio para practicar hojas de estilo.</p>
+                    <a class="boton" href="Guia1/estilos_embebidos.html">Abrir ejercicio</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="proximamente">
+            <strong>Más guías próximamente</strong>
+            <p>Cuando agregues nuevos trabajos, podés sumar aquí otro botón para acceder a ellos.</p>
+        </aside>
+    </main>
+
+    <footer>Mis guías y trabajos</footer>
+</body>
+</html>
